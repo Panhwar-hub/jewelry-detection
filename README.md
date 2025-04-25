@@ -24,7 +24,13 @@ venv\Scripts\activate
 3. Install the dependencies
 pip install -r requirements.txt
 
-4. Put your models in the right place
+4. Download the trained UNet and YOLOv8 models:
+
+- UNet: https://drive.google.com/file/d/1wtjdfbj7xDH-g78xJcBjnzkBTR7ZMqQI/view?usp=sharing
+- Place it in the `Models/` folder as `jewelry_unet.pth`
+- Place your YOLOv8 `best.pt` model in the same folder
+
+5. Put your models in the right place
 Your jewelry_unet.pth into the models/ folder
 Your YOLOv8 .pt file (best.pt) into the same folder
 
