@@ -14,8 +14,8 @@ Ring Segmentation – via UNet model trained on a small dataset.
 Ring Detection – YOLOv8 model detects ring locations with boxes.
 User Interface – select your image and see all 3 results side by side.
 
-git clone https://github.com/yourusername/Jewelry-Detection-Assistant.git
-cd Jewelry-Detection-Assistant
+git clone https://github.com/Panhwar-hub/jewelry-detection.git
+cd Jewelry-detection
 
 2. Set up a virtual environment (optional but recommended)
 python -m venv venv
@@ -24,18 +24,13 @@ venv\Scripts\activate
 3. Install the dependencies
 pip install -r requirements.txt
 
-4. Download the trained UNet and YOLOv8 models:
+4. Download the trained UNet:
 
 - UNet: https://drive.google.com/file/d/1wtjdfbj7xDH-g78xJcBjnzkBTR7ZMqQI/view?usp=sharing
 - Place it in the `Models/` folder as `jewelry_unet.pth`
-- Place your YOLOv8 `best.pt` model in the same folder
-
-5. Put your models in the right place
-Your jewelry_unet.pth into the models/ folder
-Your YOLOv8 .pt file (best.pt) into the same folder
 
 Start the GUI
-python app/app.py
+python app.py
 It’ll open up a window. Click “Select an Image,” and it will show:
 
 The original image with detected hands
